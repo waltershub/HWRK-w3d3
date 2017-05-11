@@ -34,3 +34,14 @@ def dominant(array)
 fastest(array).last
 end
  puts dominant(['fish', 'fiiish', 'fiiiiish', 'fiiiish', 'fffish', 'ffiiiiisshh', 'fsh', 'fiiiissshhhhhh'])
+
+def slow_dance(dir , array)
+  array.each.index do |i|
+    return i if array[i] == dir
+  end
+
+end
+
+def fast_dance(dir , array )
+  return array.index(dir)
+end   
